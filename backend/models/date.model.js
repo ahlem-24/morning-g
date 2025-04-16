@@ -22,6 +22,11 @@ const dateSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    active: {
+      type: Boolean,
+      default:false,
+      required: false,
+    },
   },
   { timestamps: true } // Adds createdAt and updatedAt fields
 );
